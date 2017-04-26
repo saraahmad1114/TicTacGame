@@ -12,6 +12,10 @@ class ViewController: UIViewController {
     
     var firstPlayer = 1
     var gamePlace = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    
+    var neededCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
+    
+    var gameInSession = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +32,7 @@ class ViewController: UIViewController {
   
     @IBAction func actionButton(_ sender: UIButton) {
         
-        if self.gamePlace[sender.tag-1] == 0{
+        if self.gamePlace[sender.tag-1] == 0 && self.gameInSession == true{
             
             self.gamePlace[sender.tag-1] = self.firstPlayer
         
@@ -41,8 +45,26 @@ class ViewController: UIViewController {
             firstPlayer = 1
             }
         }
+        
+        for singleCombination in self.neededCombinations{
+            
+            if self.gamePlace[singleCombination[0]] != 0 && self.gamePlace[singleCombination[0]] == self.gamePlace[singleCombination[1]] && self.gamePlace[singleCombination[1]] == self.gamePlace[singleCombination[2]]{
+                
+                self.gameInSession = false
+                
+                if self.gamePlace[singleCombination[0]] == 1{
+                    //cross has won!!
+                    print("X HAS WON")
+                }
+                else{
+                    //nought has won!!
+                    print("O HAS WON")
+                }
+            }
+        }
     }
    
+    
 
 }
 
