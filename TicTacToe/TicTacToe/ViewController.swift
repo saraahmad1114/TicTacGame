@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var firstPlayer = 1
+    var gamePlace = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +25,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+  
+    @IBAction func actionButton(_ sender: UIButton) {
+        if self.firstPlayer == 1 {
+            sender.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+            firstPlayer = 2
+        }
+        else{
+            sender.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+            firstPlayer = 1
+        }
+    }
+   
 
 }
 
