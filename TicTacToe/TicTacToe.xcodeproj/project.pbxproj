@@ -10,7 +10,6 @@
 		1BCA6E901EB01DA500F86626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA6E8F1EB01DA500F86626 /* AppDelegate.swift */; };
 		1BCA6E921EB01DA500F86626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA6E911EB01DA500F86626 /* ViewController.swift */; };
 		1BCA6E951EB01DA500F86626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCA6E931EB01DA500F86626 /* Main.storyboard */; };
-		1BCA6E981EB01DA500F86626 /* TicTacToe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA6E961EB01DA500F86626 /* TicTacToe.xcdatamodeld */; };
 		1BCA6E9A1EB01DA500F86626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCA6E991EB01DA500F86626 /* Assets.xcassets */; };
 		1BCA6E9D1EB01DA500F86626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCA6E9B1EB01DA500F86626 /* LaunchScreen.storyboard */; };
 		1BCA6EA81EB01DA500F86626 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA6EA71EB01DA500F86626 /* TicTacToeTests.swift */; };
@@ -42,7 +41,6 @@
 		1BCA6E8F1EB01DA500F86626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BCA6E911EB01DA500F86626 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BCA6E941EB01DA500F86626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1BCA6E971EB01DA500F86626 /* TicTacToe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TicTacToe.xcdatamodel; sourceTree = "<group>"; };
 		1BCA6E991EB01DA500F86626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BCA6E9C1EB01DA500F86626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BCA6E9E1EB01DA500F86626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				1BCA6E991EB01DA500F86626 /* Assets.xcassets */,
 				1BCA6E9B1EB01DA500F86626 /* LaunchScreen.storyboard */,
 				1BCA6E9E1EB01DA500F86626 /* Info.plist */,
-				1BCA6E961EB01DA500F86626 /* TicTacToe.xcdatamodeld */,
 				1BCA6EC01EB0401900F86626 /* Board.png */,
 				1BCA6EC21EB0401F00F86626 /* Cross.png */,
 				1BCA6EC41EB0402500F86626 /* Nought.png */,
@@ -275,7 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BCA6E981EB01DA500F86626 /* TicTacToe.xcdatamodeld in Sources */,
 				1BCA6E921EB01DA500F86626 /* ViewController.swift in Sources */,
 				1BCA6E901EB01DA500F86626 /* AppDelegate.swift in Sources */,
 			);
@@ -543,19 +539,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		1BCA6E961EB01DA500F86626 /* TicTacToe.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1BCA6E971EB01DA500F86626 /* TicTacToe.xcdatamodel */,
-			);
-			currentVersion = 1BCA6E971EB01DA500F86626 /* TicTacToe.xcdatamodel */;
-			path = TicTacToe.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 1BCA6E841EB01DA400F86626 /* Project object */;
 }

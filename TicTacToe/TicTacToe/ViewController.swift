@@ -59,12 +59,12 @@ class ViewController: UIViewController {
                 if self.gamePlace[singleCombination[0]] == 1{
                     
                     self.winnerLabel.text = "X Won"
-                    print("X HAS WON")
+                    print("X WON")
                 }
                 else{
                     
                     self.winnerLabel.text = "0 Won"
-                    print("O HAS WON")
+                    print("O WON")
                 }
                 
                 self.restartGameButton.isHidden = false
@@ -86,6 +86,7 @@ class ViewController: UIViewController {
         if self.gameInSession == false {
             
             self.winnerLabel.text = "DRAW"
+            print("DRAW")
             self.winnerLabel.isHidden = false
             self.restartGameButton.isHidden = false
         }
