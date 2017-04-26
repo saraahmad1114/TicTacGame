@@ -60,11 +60,19 @@ class ViewController: UIViewController {
                     
                     self.winnerLabel.text = "X Won"
                     print("X WON")
+                    
+                    let alert = UIAlertController(title: "X has Won", message: "X has Won the Game!", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
                 else{
                     
                     self.winnerLabel.text = "0 Won"
                     print("O WON")
+                    
+                    let alert = UIAlertController(title: "O has Won", message: "O has Won the Game!", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
                 
                 self.restartGameButton.isHidden = false
