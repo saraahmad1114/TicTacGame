@@ -15,6 +15,9 @@
 		1BCA6E9D1EB01DA500F86626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCA6E9B1EB01DA500F86626 /* LaunchScreen.storyboard */; };
 		1BCA6EA81EB01DA500F86626 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA6EA71EB01DA500F86626 /* TicTacToeTests.swift */; };
 		1BCA6EB31EB01DA500F86626 /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA6EB21EB01DA500F86626 /* TicTacToeUITests.swift */; };
+		1BCA6EC11EB0401900F86626 /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BCA6EC01EB0401900F86626 /* Board.png */; };
+		1BCA6EC31EB0401F00F86626 /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BCA6EC21EB0401F00F86626 /* Cross.png */; };
+		1BCA6EC51EB0402500F86626 /* Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BCA6EC41EB0402500F86626 /* Nought.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		1BCA6EAE1EB01DA500F86626 /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCA6EB21EB01DA500F86626 /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		1BCA6EB41EB01DA500F86626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCA6EC01EB0401900F86626 /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Board.png; path = ../../../../Desktop/Board.png; sourceTree = "<group>"; };
+		1BCA6EC21EB0401F00F86626 /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cross.png; path = ../../../../Desktop/Cross.png; sourceTree = "<group>"; };
+		1BCA6EC41EB0402500F86626 /* Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Nought.png; path = ../../../../Desktop/Nought.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				1BCA6E9B1EB01DA500F86626 /* LaunchScreen.storyboard */,
 				1BCA6E9E1EB01DA500F86626 /* Info.plist */,
 				1BCA6E961EB01DA500F86626 /* TicTacToe.xcdatamodeld */,
+				1BCA6EC01EB0401900F86626 /* Board.png */,
+				1BCA6EC21EB0401F00F86626 /* Cross.png */,
+				1BCA6EC41EB0402500F86626 /* Nought.png */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -196,6 +205,7 @@
 				TargetAttributes = {
 					1BCA6E8B1EB01DA500F86626 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HLKHFWAG55;
 						ProvisioningStyle = Automatic;
 					};
 					1BCA6EA21EB01DA500F86626 = {
@@ -235,7 +245,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BCA6EC51EB0402500F86626 /* Nought.png in Resources */,
+				1BCA6EC11EB0401900F86626 /* Board.png in Resources */,
 				1BCA6E9D1EB01DA500F86626 /* LaunchScreen.storyboard in Resources */,
+				1BCA6EC31EB0401F00F86626 /* Cross.png in Resources */,
 				1BCA6E9A1EB01DA500F86626 /* Assets.xcassets in Resources */,
 				1BCA6E951EB01DA500F86626 /* Main.storyboard in Resources */,
 			);
@@ -414,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HLKHFWAG55;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.first.TicTacToe;
@@ -426,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HLKHFWAG55;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.first.TicTacToe;
@@ -507,6 +522,7 @@
 				1BCA6EB91EB01DA500F86626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BCA6EBA1EB01DA500F86626 /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +531,7 @@
 				1BCA6EBC1EB01DA500F86626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BCA6EBD1EB01DA500F86626 /* Build configuration list for PBXNativeTarget "TicTacToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +540,7 @@
 				1BCA6EBF1EB01DA500F86626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
