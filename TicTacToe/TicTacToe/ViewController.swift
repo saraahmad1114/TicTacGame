@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     
     var gameInSession = true
 
+    @IBOutlet weak var restartGameButton: UIButton!
+    
+    @IBOutlet weak var winnerLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -53,17 +57,54 @@ class ViewController: UIViewController {
                 self.gameInSession = false
                 
                 if self.gamePlace[singleCombination[0]] == 1{
-                    //cross has won!!
+                    
+                    self.winnerLabel.text = "X Won"
                     print("X HAS WON")
                 }
                 else{
-                    //nought has won!!
+                    
+                    self.winnerLabel.text = "0 Won"
                     print("O HAS WON")
                 }
+                
+                self.restartGameButton.isHidden = false
+                self.winnerLabel.isHidden = false
             }
+        }
+        
+        self.gameInSession = false
+        
+        for i in self.gamePlace{
+            
+            if i == 0{
+                
+                self.gameInSession = true
+                break
+            }
+        }
+        
+        if self.gameInSession == false {
+            
+            self.winnerLabel.text = "DRAW"
+            self.winnerLabel.isHidden = false
+            self.restartGameButton.isHidden = false
         }
     }
    
+    @IBAction func restartGame(_ sender: Any) {
+        
+        self.gamePlace = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        self.gameInSession = true
+        self.firstPlayer = 1
+        
+        self.restartGameButton.isHidden = true
+        self.winnerLabel.isHidden = true
+        
+        for i in 1...9{
+            let button = view.viewWithTag(i) as! UIButton
+            button.setImage(nil, for: UIControlState())
+        }
+    }
     
 
 }
